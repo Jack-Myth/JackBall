@@ -1,0 +1,28 @@
+{
+	"FileVersion": 3,
+	"EngineAssociation": "4.19",
+	"Category": "",
+	"Description": "",
+	"Modules": [
+		{
+			"Name": "JackBall",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		}
+	],	
+	"Plugins": [
+		{
+			"Name": "ApexDestruction",
+			"Enabled": true
+		}
+		],
+	"TargetPlatforms": [
+		"Android",
+		"WindowsNoEditor",
+		"HTML5",
+		"LinuxNoEditor"
+	]
+}
