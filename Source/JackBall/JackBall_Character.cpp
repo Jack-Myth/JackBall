@@ -20,7 +20,7 @@ AJackBall_Character::AJackBall_Character()
 	JackBallSelf->AttachToComponent(RootComponent,FAttachmentTransformRules::KeepRelativeTransform);
 	JackBallSelf->SetRelativeLocation(FVector(0, 0, 0));
 	JackBallSelf->SetStaticMesh(ConstructorHelpers::FObjectFinder<UStaticMesh>(TEXT("StaticMesh'/Engine/BasicShapes/Sphere.Sphere'")).Object);
-	JackBallSelf->SetMaterial(0, ConstructorHelpers::FObjectFinder<UMaterialInstanceConstant>(TEXT("MaterialInstanceConstant'/Game/TestForMaterials/MaterialField/TestMaterial_Glass_Inst.TestMaterial_Glass_Inst'")).Object);
+	JackBallSelf->SetMaterial(0, ConstructorHelpers::FObjectFinder<UMaterial>(TEXT("Material'/Game/JackBall/Materials/BallSurface_Android.BallSurface_Android'")).Object);
 	/*if (UGameplayStatics::GetPlatformName()=="Windows")
 	{
 		JackBallSelf->SetMaterial(0, ConstructorHelpers::FObjectFinder<UMaterial>(TEXT("Material'/Game/JackBall/Materials/BallSurface.BallSurface'")).Object);
